@@ -15,11 +15,13 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     u18n.changeLanguage(currentLanguage === 'en' ? 'ru' : 'en')
   }
 
+  const a = 0
+
   return (
-    <Button
-      onClick={toggleLanguage}
-      className={classNames(cls.LangSwitcher, {}, [className])}
-    >
+          <Button
+            onClick={toggleLanguage}
+            className={classNames(cls.LangSwitcher, {}, [className])}
+          >
       {t('Language')}
     </Button>
   )
