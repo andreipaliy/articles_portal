@@ -2,6 +2,7 @@ module.exports = {
     env: {
         browser: true,
         es2021: true,
+        jest: true,
     },
     extends: [
         'plugin:react/recommended',
@@ -25,20 +26,24 @@ module.exports = {
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         indent: ['error', 4],
-        'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', 'tsx'] }],
+        'react/jsx-filename-extension':
+        ['error', { extensions: ['.js', '.jsx', 'tsx'] }],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        '@typescript-eslint/no-unused-vars':
+        ['error', { argsIgnorePattern: '^_' }],
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'off',
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+        'import/no-extraneous-dependencies':
+        ['error', { devDependencies: true }],
         'no-underscore-dangle': 'off',
         'react/button-has-type': 'error',
+        'max-len': ['error', { ignoreComments: true }],
         semi: [
             'error',
             'never',

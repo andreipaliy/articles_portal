@@ -11,5 +11,5 @@ export function classNames(
         ...Object.entries(modes)
             .filter(([_, value]) => Boolean(value))
             .map(([className]) => className),
-    ].join(' ')
+    ].join(' ').trim()
 }
