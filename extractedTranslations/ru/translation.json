@@ -1,9 +1,13 @@
 {
   "About": "About",
   "About site": "About site",
+  "Go to the main page": "Go to the main page",
   "Language": "Language",
   "Main": "Main",
   "Main Page": "Main Page",
+  "Oops, something went wrong": "Oops, something went wrong",
   "Page not found": "Page not found",
-  "Toogle": "Toogle"
+  "Something went wrong": "Something went wrong",
+  "Toogle": "Toogle",
+  "throw error": "throw error"
 }

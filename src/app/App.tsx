@@ -6,8 +6,9 @@ import { Suspense } from 'react'
 import { AppRouter } from './providers/router/ui'
 import { useTheme } from './providers/ThemeProvider'
 
-export function App() {
+export const App = () => {
     const { theme } = useTheme()
+
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback=''>
