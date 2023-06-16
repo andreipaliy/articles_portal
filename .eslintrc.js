@@ -43,7 +43,7 @@ module.exports = {
         ['error', { devDependencies: true }],
         'no-underscore-dangle': 'off',
         'react/button-has-type': 'error',
-        'max-len': ['error', { ignoreComments: true }],
+        'max-len': ['error', { code: 100, ignoreComments: true }],
         semi: [
             'error',
             'never',
