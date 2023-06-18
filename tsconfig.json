@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "types": ["@types/jest"],
+    // commented temporary because it disables TypeScript support of jest config 
+    // "types": ["@types/jest"],
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
@@ -21,6 +22,9 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  },
+  }, 
+  // "include": [
+  //   "./config/jest/setupTests.ts"
+  // ]
 
 }

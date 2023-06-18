@@ -57,9 +57,21 @@ module.exports = {
             'single',
         ],
         'jsx-quotes': ['error', 'prefer-single'],
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string':
+        ['error', {
+            markupOnly: true,
+            ignoreAttribute: ['data-testid'],
+        }],
 
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{tsx,ts}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
     globals: {
         __IS_DEV__: true,
     },
