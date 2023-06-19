@@ -8,7 +8,7 @@ import { useTheme } from './providers/ThemeProvider'
 
 export const App = () => {
     const { theme } = useTheme()
-    // TODO: to fix linting scripts...
+
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback=''>

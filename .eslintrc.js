@@ -8,6 +8,8 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
+        'plugin:storybook/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -20,58 +22,54 @@ module.exports = {
     plugins: [
         '@typescript-eslint',
         'react',
-        'i18next',
-    ],
+        'i18next'],
     rules: {
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         indent: ['error', 4],
-        'react/jsx-filename-extension':
-        ['error', { extensions: ['.js', '.jsx', 'tsx'] }],
+        'react/jsx-filename-extension': ['error',
+            {
+                extensions: ['.js', '.jsx', 'tsx'],
+            }],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars':
-        ['error', { argsIgnorePattern: '^_' }],
+        '@typescript-eslint/no-unused-vars': ['error',
+            {
+                argsIgnorePattern: '^_',
+            }],
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'off',
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies':
-        ['error', { devDependencies: true }],
+        'import/no-extraneous-dependencies': ['error',
+            {
+                devDependencies: true,
+            }],
         'no-underscore-dangle': 'off',
         'react/button-has-type': 'error',
-        'max-len': ['error', { code: 100, ignoreComments: true }],
-        semi: [
-            'error',
-            'never',
-        ],
-        'linebreak-style': [
-            'error',
-            'unix',
-        ],
-        quotes: [
-            'error',
-            'single',
-        ],
+        'max-len': ['error',
+            {
+                code: 100,
+                ignoreComments: true,
+            }],
+        semi: ['error', 'never'],
+        'linebreak-style': ['error', 'unix'],
+        quotes: ['error', 'single'],
         'jsx-quotes': ['error', 'prefer-single'],
-        'i18next/no-literal-string':
-        ['error', {
+        'i18next/no-literal-string': ['error', {
             markupOnly: true,
             ignoreAttribute: ['data-testid', 'to'],
         }],
-
     },
-    overrides: [
-        {
-            files: ['**/src/**/*.test.{tsx,ts}'],
-            rules: {
-                'i18next/no-literal-string': 'off',
-            },
+    overrides: [{
+        files: ['**/src/**/*.test.{tsx,ts}'],
+        rules: {
+            'i18next/no-literal-string': 'off',
         },
-    ],
+    }],
     globals: {
         __IS_DEV__: true,
     },
