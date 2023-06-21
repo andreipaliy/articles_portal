@@ -33,7 +33,6 @@ Secondary.args = {
     theme: AppLinkTheme.SECONDARY,
 }
 
-// TODO: to fix appearance of this variant...
 export const SecondaryDark = Template.bind({})
 SecondaryDark.args = {
     theme: AppLinkTheme.SECONDARY,
