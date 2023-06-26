@@ -2,7 +2,7 @@ import { Meta, StoryFn } from '@storybook/react'
 
 import { Theme } from 'app/providers/ThemeProvider'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator'
-import { Button, ThemeButton } from './Button'
+import { Button, ButtonProps, ThemeButton } from './Button'
 
 export default {
     title: 'shared/Button',
@@ -12,7 +12,7 @@ export default {
     },
 } as Meta<typeof Button>
 
-const Template: StoryFn<typeof Button> = (args) => <Button {...args} />
+const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {
