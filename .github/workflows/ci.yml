@@ -31,7 +31,7 @@ jobs:
 
       - name: Run screenshot tests
         run: | 
-            npm storybook:build
+            npm run storybook:build
             npx run test:ui:ci
 
       - name: Lint SCSS code
