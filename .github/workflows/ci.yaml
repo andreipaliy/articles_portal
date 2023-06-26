@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Starting NodeJS ${{matrix.node_version}}
+      - name: Starting NodeJS ${{matrix.node-version}}
       - uses: actions/setup-node@v1
         with: 
           node-version: ${{matrix.node_version}}
@@ -35,4 +35,4 @@ jobs:
       - name: Linting TypeScript code
       - run: npm run lint:ts:fix
 
-      
+
