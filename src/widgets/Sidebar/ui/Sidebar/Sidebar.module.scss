@@ -19,3 +19,40 @@
     flex-wrap: wrap;
     width: 100%;
 }
+
+.sidebarToggleBtn {
+    position: absolute;
+    right: calc(var(--font-line-l) * -1);
+    bottom: var(--font-line-l);
+}
+
+.links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--inverted-primary-color);
+    margin-left: 30px;
+}
+
+.linksCollapsed {
+    margin-left: 0;
+    align-items: center;
+}
+
+.mainLink {
+    color: var(--inverted-secondary-color);
+}
+
+.link {
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.icon {
+    fill: var(--inverted-primary-color);
+    width: 28px;
+    height: 28px;
+}

@@ -1,13 +1,16 @@
 import { classNames } from 'shared/lib/classNames'
 import { Button } from 'shared/ui/Button'
 import { useTranslation } from 'react-i18next'
+import { ButtonSize } from 'shared/ui/Button/Button'
 import cls from './LangSwitcher.module.scss'
 
 interface LangSwitcherProps {
   className?: string
+  size?: ButtonSize
+  short?: boolean
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, size, short }: LangSwitcherProps) => {
     const [t, u18n] = useTranslation()
 
     const toggleLanguage = () => {
@@ -19,8 +22,9 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
         <Button
             onClick={toggleLanguage}
             className={classNames(cls.LangSwitcher, {}, [className])}
+            size={size}
         >
-            {t('Language')}
+            {short ? t('ShortLang') : t('Language')}
         </Button>
     )
 }
