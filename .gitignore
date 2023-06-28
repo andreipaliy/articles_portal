@@ -6,3 +6,5 @@ node_modules
 package-lock.json
 .DS_Store
 *.txt
+/.loki/report.html
+/.loki/report.json

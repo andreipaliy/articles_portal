@@ -1,11 +1,11 @@
 import { Meta, StoryFn } from '@storybook/react'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
-import { NavLink, NavLinkTheme } from './NavLink'
+import { AppLink, AppLinkTheme } from './AppLink'
 
 export default {
     title: 'shared/AppLink',
-    component: NavLink,
+    component: AppLink,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
@@ -13,28 +13,28 @@ export default {
         to: '/',
         children: 'Text',
     },
-} as Meta<typeof NavLink>
+} as Meta<typeof AppLink>
 
-const Template: StoryFn<typeof NavLink> = (args) => <NavLink to='' {...args} />
+const Template: StoryFn<typeof AppLink> = (args) => <AppLink to='' {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {
-    theme: NavLinkTheme.PRIMARY,
+    theme: AppLinkTheme.PRIMARY,
 }
 
 export const PrimaryDark = Template.bind({})
 PrimaryDark.args = {
-    theme: NavLinkTheme.PRIMARY,
+    theme: AppLinkTheme.PRIMARY,
 }
 PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)]
 
 export const Secondary = Template.bind({})
 Secondary.args = {
-    theme: NavLinkTheme.SECONDARY,
+    theme: AppLinkTheme.SECONDARY,
 }
 
 export const SecondaryDark = Template.bind({})
 SecondaryDark.args = {
-    theme: NavLinkTheme.SECONDARY,
+    theme: AppLinkTheme.SECONDARY,
 }
 Secondary.decorators = [ThemeDecorator(Theme.DARK)]

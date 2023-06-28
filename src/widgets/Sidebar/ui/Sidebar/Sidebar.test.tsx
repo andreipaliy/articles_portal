@@ -1,16 +1,16 @@
 import { fireEvent, screen } from '@testing-library/react'
 import React from 'react'
-import { renderWithTranslation } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation'
+import { renderWithProviders } from 'shared/config/tests/renderWithProviders/renderWithProviders'
 import { Sidebar } from './Sidebar'
 
 describe('Sidebar component', () => {
     test('should render', () => {
-        renderWithTranslation(<Sidebar />)
+        renderWithProviders(<Sidebar />)
         expect(screen.getByTestId('sidebar')).toBeInTheDocument()
     })
 
     test('should have collapsed class when clicking on toggle button', () => {
-        renderWithTranslation(<Sidebar />)
+        renderWithProviders(<Sidebar />)
 
         const toggleButton = screen.getByTestId('sidebar-toggle-btn')
         const sidebar = screen.getByTestId('sidebar')
@@ -22,7 +22,7 @@ describe('Sidebar component', () => {
     })
 
     test('should not have collapsed class when clicking on toggle button second', () => {
-        renderWithTranslation(<Sidebar />)
+        renderWithProviders(<Sidebar />)
 
         const toggleButton = screen.getByTestId('sidebar-toggle-btn')
         const sidebar = screen.getByTestId('sidebar')

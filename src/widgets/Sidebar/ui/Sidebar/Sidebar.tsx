@@ -4,7 +4,7 @@ import { Button } from 'shared/ui/Button'
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { LangSwitcher } from 'widgets/LangSwitcher/ui'
 import { ButtonSize, ButtonTheme } from 'shared/ui/Button/Button'
-import { NavLink, NavLinkTheme } from 'shared/ui/NavLink/NavLink'
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 import { useTranslation } from 'react-i18next'
 import { RoutePaths } from 'shared/config/routeConfig/routeConfig'
 import HomeIcon from 'shared/assets/icons/home.svg'
@@ -29,22 +29,22 @@ export const Sidebar = ({ className }: SidebarProps) => {
             ])}
         >
             <div className={classNames(cls.links, { [cls.linksollapsed]: collapsed }, [])}>
-                <NavLink
+                <AppLink
                     to={RoutePaths.main}
-                    theme={NavLinkTheme.SECONDARY}
+                    theme={AppLinkTheme.SECONDARY}
                     className={classNames(cls.link, {}, [])}
                 >
                     <HomeIcon className={classNames(cls.icon)} />
                     {!collapsed && <span>{t('Main')}</span>}
-                </NavLink>
-                <NavLink
-                    theme={NavLinkTheme.SECONDARY}
+                </AppLink>
+                <AppLink
+                    theme={AppLinkTheme.SECONDARY}
                     to={RoutePaths.about}
                     className={classNames(cls.mainLink, {}, [cls.link])}
                 >
                     <AboutIcon className={classNames(cls.icon)} />
                     {!collapsed && <span>{t('About')}</span>}
-                </NavLink>
+                </AppLink>
             </div>
             <Button
                 data-testid='sidebar-toggle-btn'
