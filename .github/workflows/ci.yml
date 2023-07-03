@@ -25,25 +25,34 @@ jobs:
 
       - name: Create production build
         run: npm run build:prod
+        if: always()
         
       - name: Create storybook build
         run: npm run storybook:build
+        if: always()
 
       - name: Run unit tests
         run: npm run test:unit
+        if: always()
 
       - name: Run screenshot tests
         run: npm run test:ui:ci
+        if: always()
+
+      - name: Check .loki directory contents
+        run: ls -R .loki
 
       - name: Check which screeshot tests failed
         run: |
           echo "Contents of .loki/difference directory:"
-          ls -R .loki/difference || true
+          ls -R .loki/difference
 
       - name: Lint SCSS code
         run: npm run lint:scss:fix
+        if: always()
 
       - name: Lint TypeScript code
         run: npm run lint:ts:fix
+        if: always()
 
 
