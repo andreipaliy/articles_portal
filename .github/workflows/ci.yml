@@ -40,7 +40,9 @@ jobs:
         if: always()
 
       - name: Check which screeshot tests failed
-        run: ls -R .loki/difference
+        run: |
+          echo "Contents of .loki/difference directory:"
+          ls -R .loki/difference
 
       - name: Lint SCSS code
         run: npm run lint:scss:fix
