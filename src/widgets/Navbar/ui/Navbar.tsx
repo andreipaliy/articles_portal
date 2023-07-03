@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames'
 import { useState } from 'react'
-import { Modal } from 'shared/ui/Modal/Modal'
+import { Modal } from 'shared/ui/Modal'
 import { useTranslation } from 'react-i18next'
 import { Button, ThemeButton } from 'shared/ui/Button'
 import cls from './Navbar.module.scss'
