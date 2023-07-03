@@ -39,6 +39,9 @@ jobs:
         run: npm run test:ui:ci
         if: always()
 
+      - name: Check which screeshot tests failed
+        run: ls -R .loki/difference
+
       - name: Lint SCSS code
         run: npm run lint:scss:fix
         if: always()
