@@ -6,9 +6,14 @@
     align-items: center;
 }
 
+.clear_inverted,
 .clear {
     background: none;
     outline: none;
+}
+
+.clear_inverted {
+    color: var(--inverted-primary-color);
 }
 
 .outlined {

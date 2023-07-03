@@ -1,1 +1,2 @@
-export { Loader } from './ui/Loader'
+export { Loader } from './Loader'
+// TODO: to remove this file...

@@ -8,8 +8,11 @@ export interface withRouterOptions {
     route?: string
 }
 
-// eslint-disable-next-line max-len
-export const renderWithProviders = (component: ReactNode, options: withRouterOptions = { route: '/' }) => (render(
+export const renderWithProviders = (
+    component: ReactNode,
+    options: withRouterOptions =
+    { route: '/' },
+) => (render(
     <MemoryRouter initialEntries={[options.route]}>
         <I18nextProvider i18n={i18nForTesting}>
             {component}

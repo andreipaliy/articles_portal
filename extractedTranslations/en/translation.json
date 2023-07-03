@@ -1,6 +1,8 @@
 {
   "About": "About",
   "About site": "About site",
+  "Close": "Close",
+  "Close modal": "Close modal",
   "Go to the main page": "Go to the main page",
   "Language": "Language",
   "Main": "Main",
@@ -8,6 +10,7 @@
   "Oops, something went wrong": "Oops, something went wrong",
   "Page not found": "Page not found",
   "ShortLang": "",
+  "Sign in": "Sign in",
   "Something went wrong": "Something went wrong",
   "Toogle": "Toogle",
   "throw error": "throw error"
