@@ -1,1 +1,1 @@
-## This is a simple project where I add new tachnologies and approaches
+## This is a project where I add & integrate new tachnologies and approaches like in production projects
