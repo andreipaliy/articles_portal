@@ -1,1 +1,1 @@
-## This is an 'learning' project where I add & integrate new technologies and approaches like in production projects.
+## This is a 'learning' project where I add & integrate new technologies and approaches like in production projects.
