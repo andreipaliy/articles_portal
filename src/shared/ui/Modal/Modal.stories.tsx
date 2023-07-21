@@ -1,7 +1,8 @@
-import { Meta, StoryFn } from '@storybook/react'
-import {
-    Modal, ModalProps,
-} from './Modal'
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Modal } from 'shared/ui/Modal/Modal';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
 
 export default {
     title: 'shared/Modal',
@@ -9,13 +10,19 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as Meta<typeof Modal>
+} as ComponentMeta<typeof Modal>;
 
-const Template: StoryFn<ModalProps> = (args) => <Modal {...args} />
+const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />;
 
-// TODO: to write styling of modal based on current theme + write story for it
-export const Primary = Template.bind({})
+export const Primary = Template.bind({});
 Primary.args = {
-    children: 'Lorem ipsum dolor',
     isOpen: true,
-}
+    children: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ',
+};
+
+export const Dark = Template.bind({});
+Dark.args = {
+    isOpen: true,
+    children: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ',
+};
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
