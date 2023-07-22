@@ -37,8 +37,9 @@ jobs:
 
       - name: Run screenshot tests
         run: |
-         npm run test:ui:ci
           loki update --storiesFilter="^shared\\/Modal Primary|shared\\/Modal Dark\$" --reactUri="file:./storybook-static
+           npm run test:ui:ci
+           npm run test:ui:ok
         if: always()
 
       - name: Lint SCSS code
