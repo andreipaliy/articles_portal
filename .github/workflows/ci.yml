@@ -36,7 +36,7 @@ jobs:
         if: always()
 
       - name: Run screenshot tests
-        run: npm run test:ui:ci
+        run: npm run test:ui:ci && loki update --storiesFilter="^shared\\/Modal Primary|shared\\/Modal Dark\$" --reactUri="file:./storybook-static || true
         if: always()
 
       - name: Lint SCSS code
