@@ -37,7 +37,6 @@ jobs:
 
       - name: Run screenshot tests
         run: npm run test:ui:ci
-        if: always()
 
       - name: Lint SCSS code
         run: npm run lint:scss:fix
