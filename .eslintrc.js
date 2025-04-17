@@ -59,7 +59,7 @@ module.exports = {
                 ignoreComments: true,
             }],
         semi: ['error', 'never'],
-        'linebreak-style': ['error', 'unix'],
+        'linebreak-style': ['error', 'windows'],
         quotes: ['error', 'single'],
         'jsx-quotes': ['error', 'prefer-single'],
         'i18next/no-literal-string': ['error', {

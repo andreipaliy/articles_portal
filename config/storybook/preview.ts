@@ -1,10 +1,9 @@
-import type { Preview } from '@storybook/react'
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator'
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator'
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator'
 import { Theme } from '../../src/app/providers/ThemeProvider/index'
 
-const preview: Preview = {
+const preview = {
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
         controls: {
