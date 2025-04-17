@@ -1,7 +1,7 @@
 {
   "Just some text": "Просто какой-то текст",
   "Translate": "Перевести",
-  "Language": "Русский",
+  "Language": "English",
   "ShortLang": "РУ",
   "About": "О сайте",
   "Main": "Главная",
@@ -9,5 +9,6 @@
   "Oops, something went wrong": "Ой, что-то пошло не так...",
   "Go to the main page": "Перейти на главную страницу",
   "Sign in": "Войти",
-  "Close": "Закрыть"
+  "Close": "Закрыть",
+  "throw error": "throw error"
 }

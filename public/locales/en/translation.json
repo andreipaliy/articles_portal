@@ -1,7 +1,7 @@
 {
   "Just some text": "Just some text",
   "Translate": "Translate",
-  "Language": "English",
+  "Language": "Русский",
   "ShortLang": "EN",
   "About": "About",
   "Main": "Main",
@@ -9,5 +9,6 @@
   "Oops, something went wrong": "Oops, something went wrong",
   "Go to the main page": "Go to the main page",
   "Close": "Close",
-  "Sign in": "Sign in"
+  "Sign in": "Sign in",
+  "throw error": "throw error"
 }
