@@ -12,5 +12,4 @@ export const Portal = ({ children, target }: PortalProps) => {
     return (
         createPortal(children, targetElement)
     )
-
 }
