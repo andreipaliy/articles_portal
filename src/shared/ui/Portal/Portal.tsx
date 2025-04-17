@@ -6,6 +6,11 @@ interface PortalProps {
   target?: HTMLElement
 }
 
-export const Portal = ({ children, target = document.body }: PortalProps) => (
-    createPortal(children, target)
-)
+export const Portal = ({ children, target }: PortalProps) => {
+    const targetElement = target ?? document.getElementById('app') ?? document.body
+
+    return (
+        createPortal(children, targetElement)
+    )
+
+}

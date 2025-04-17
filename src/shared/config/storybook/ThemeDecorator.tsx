@@ -4,9 +4,11 @@ import 'app/styles/index.scss'
 
 export const ThemeDecorator = (theme: Theme) => (StoryComponent:typeof Story) => (
     <ThemeProvider initialTheme={theme}>
-        <div className={
-            `app ${theme}`
-        }
+        <div
+            className={
+                `app ${theme}`
+            }
+            id='app'
         >
             <StoryComponent />
         </div>
