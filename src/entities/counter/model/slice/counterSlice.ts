@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { CounterSchema } from '../types/CounterSchema'
+import { CounterSchema } from '../types'
 
 export interface CounterState {
   value: number

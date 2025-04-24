@@ -1,0 +1,13 @@
+.Input {
+    width: 100%;
+}
+
+.Input::placeholder{
+    margin-left: 4px;
+}
+.InputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

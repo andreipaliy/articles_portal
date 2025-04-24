@@ -1,5 +1,4 @@
 import { fireEvent, screen } from '@testing-library/react'
-import React from 'react'
 import { renderWithProviders } from 'shared/config/tests/renderWithProviders/renderWithProviders'
 import { Sidebar } from './Sidebar'
 
