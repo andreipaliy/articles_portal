@@ -55,7 +55,7 @@ module.exports = {
         'react/button-has-type': 'error',
         'max-len': ['error',
             {
-                code: 100,
+                code: 120,
                 ignoreComments: true,
             }],
         semi: ['error', 'never'],
